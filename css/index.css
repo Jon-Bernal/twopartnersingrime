@@ -143,6 +143,143 @@ textarea {
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPBQ.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Raleway', sans-serif;
+  min-height: 100%;
+}
+.pageWrapper {
+  width: 100%;
+  margin: 70px auto 0 auto;
+}
+form {
+  font-family: 'Raleway', sans-serif;
+}
+p {
+  line-height: 1.25;
+}
+.header {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+  }
+}
+.header div {
+  min-height: 100%;
+  padding: 20px;
+}
+.header div h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  .header div h1 {
+    font-size: 1.7rem;
+  }
+}
+.header div h1 a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.header div button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  .header div button {
+    font-size: 1.7rem;
+  }
+}
+.header div button a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.header div button a i {
+  margin-left: 5px;
+}
+.container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 10, 10, 0.8);
+}
+.container nav .inner {
+  background-color: black;
+  border-radius: 10px;
+  min-height: 200px;
+  min-width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container nav .inner h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+.container nav .inner ul {
+  width: 100%;
+}
+.container nav .inner ul li {
+  font-size: 2.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container nav .inner ul li a {
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 2.5px;
+}
+.container nav .inner ul li a:hover {
+  background-color: #333333;
+}
+.container nav .inner a {
+  color: white;
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
   font-weight: 200;
   src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwOIpWqZPBQ.ttf) format('truetype');
 }
@@ -175,4 +312,69 @@ textarea {
   font-style: normal;
   font-weight: 600;
   src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
+}
+.banner {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .banner-inner {
+  text-align: center;
+}
+.banner .banner-inner h2 {
+  font-size: 4rem;
+  padding-bottom: 10px;
+  border-bottom: 3px solid black;
+}
+@media (max-width: 500px) {
+  .banner .banner-inner h2 {
+    font-size: 2rem;
+  }
+}
+.banner .banner-inner p {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .banner .banner-inner p {
+    font-size: 1.75rem;
+  }
+}
+.about {
+  max-width: 1020px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.about h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.about .split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.about .split p {
+  max-width: 500px;
+  width: 45%;
+  font-size: 1.6rem;
+}
+.about p {
+  width: 90%;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+.contact {
+  width: 100%;
+  background-color: yellow;
+}
+.contact h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
