@@ -314,11 +314,13 @@ p {
   src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
 }
 .banner {
-  width: 100%;
-  height: 95vh;
+  width: 80%;
+  margin: 100px auto 0;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .banner .banner-inner {
   text-align: center;
@@ -327,6 +329,7 @@ p {
   font-size: 4rem;
   padding-bottom: 10px;
   border-bottom: 3px solid black;
+  font-weight: bold;
 }
 @media (max-width: 500px) {
   .banner .banner-inner h2 {
@@ -346,12 +349,13 @@ p {
   max-width: 1020px;
   width: 90%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 80px 0;
 }
 .about h3 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 .about .split {
   display: flex;
@@ -371,10 +375,52 @@ p {
 }
 .contact {
   width: 100%;
-  background-color: yellow;
+  padding: 80px 0;
+  background-color: #323232;
 }
 .contact h3 {
+  font-weight: bold;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
+  color: white;
+}
+.contact p {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+}
+.contact form {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact form input,
+.contact form textarea {
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+  width: 90%;
+  color: #ccc;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  color: #ccc;
+}
+.contact form button {
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #ccc;
+  color: #ccc;
+  border-radius: 5px;
+  padding: 10px 30px;
 }
