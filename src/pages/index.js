@@ -1,8 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
+import '../styles/reset.scss'
 
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
+
 import ContactForm from '../components/ContactForm/ContactForm'
 
 const IndexPage = () => (
