@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+h1 {
+  font-size: $font-big;
+  color: $color-black;
+  margin: 0px;
+}
+
+.faq-list {
+  margin: 40px auto;
+  max-width: 800px;
+}

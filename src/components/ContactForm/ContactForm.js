@@ -4,13 +4,12 @@ import './ContactForm.scss';
 
 const ContactForm = () => (
   <div className="contact--div">
-    <h3>Ready for more free time?  Contact us Today!</h3>
     <form method="POST" action="https://formspree.io/jrb2801@yahoo.com">
       <input type="email" name="email" placeholder="Your email" />
       <input type="text" name="name" placeholder="Your Name" />
       <input type="tel" name="telephone" placeholder="Your Telephone Number" />
       <textarea name="message" placeholder="How can we help you?"></textarea>
-      <button type="submit">Send</button>
+      <button className="contactSubmit" type="submit">Send</button>
     </form>
   </div>
 )

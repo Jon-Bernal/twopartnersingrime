@@ -43,8 +43,10 @@ const IndexPage = () => (
       <h3 className="">Are you a commercial space?</h3>
       <Link className='actionCall--link' to="/commercial-cleaning">Learn More</Link>
     </div>
-
-    <ContactForm />
+    <div className="contactSection">
+      <h3>Ready for more free time? <br /> Contact us Today!</h3>
+      <ContactForm />
+    </div>
 
   </Layout>
 )

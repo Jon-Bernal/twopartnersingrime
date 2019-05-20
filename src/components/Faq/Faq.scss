@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.faq--container {
+  // background-color: $color-blue;
+  margin-bottom: 10px;
+  h4 {
+    margin: 0px;
+    padding: 30px;
+    background-color: $color-blue;
+    border-radius: 10px;
+  }
+  p {
+    margin: 0px;
+  }
+}
