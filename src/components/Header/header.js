@@ -4,7 +4,7 @@ import React from "react"
 import './header.scss';
 
 const Header = () => (
-  <header>
+  <header className="mainHeader">
     <div className="container">
       <div className="logo">
         <h1 className="logo-h1">

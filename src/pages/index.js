@@ -3,16 +3,19 @@ import { Link } from "gatsby"
 
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
-
 import ContactForm from '../components/ContactForm/ContactForm'
+
+import '../styles/page-styles/index.scss';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`maid`, `cleaning`, `commercial`, 'residential', 'janitor', 'janitorial']} />
     <h2>We Clean. You Relax.</h2>
-    <div className="sideBySide">
-      <h3>Why Choose Two Partners In Grime?</h3>
-      <div>
+    <div className="sideBySide spacing">
+      <div className="left">
+        <h3>Why Choose <br />Two Partners In Grime?</h3>
+      </div>
+      <div className="right">
         <p>Cleaning’s no fun.  In fact, it’s time-consuming, dirty, and can involve a bruised knee or two. Luckily for you, we love to clean. It’s basically all we do. Get your day and knees back, call us to make your place shine like never before.</p>
         <p>In the rare event you’re not satisfied with the quality of the service, we will make it right.</p>
       </div>
