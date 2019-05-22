@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.sideBySide {
+  @extend %sideBySide;
+  align-items: flex-start;
+  .left,
+  .right {
+    @extend %side;
+  }
+  .cart-svg {
+    width: 100%;
+  }
+}
+
+.left-content {
+  h3 {
+    font-size: $font-big;
+  }
+  p {
+    font-size: $font-small;
+    text-align: left;
+    color: $color-black;
+  }
+  a {
+    @include btn();
+    background-color: $color-blue;
+    font-size: $font-small;
+    color: $color-white;
+    padding: 10px 20px;
+  }
+}

@@ -52,16 +52,32 @@ const faqPage = () => (
     <h1>FAQ</h1>
     <div className="faq-list">
       {list.map(item => {
-        return <Faq header={item.header} question={item.question} />
+        return (
+          <Faq
+            header={item.header}
+            key={item.header}
+            question={item.question}
+            faqClickHandler={faqClickHandler}
+          />
+        )
       })}
-      <div className="faq--container">
+      <div className="faq--container" onClick={faqClickHandler}>
         <h4 className="faq--h4">How do I get an office cleaning quote?</h4>
-        <p className="faq--p">
+        <p className="faq--p hidden">
           Just <Link to="/">contact us</Link> to get started!
         </p>
       </div>
     </div>
   </Layout>
 )
+
+function faqClickHandler(e) {
+  console.log(e.currentTarget.children)
+  const el = e.currentTarget
+  el.children[0].classList.toggle("roundBottom")
+  for (let i = 1; i < e.currentTarget.children.length; i++) {
+    e.currentTarget.children[i].classList.toggle("hidden")
+  }
+}
 
 export default faqPage
