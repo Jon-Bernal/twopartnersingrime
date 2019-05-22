@@ -61,11 +61,13 @@ const CommercialCleaning = () => (
       </div>
     </section>
 
-    <div className="callToAction">
-      <p>
+    <div className="actionCall--div">
+      <h3>
         Focus on your business. <br /> Leave the cleaning to us
-      </p>
-      <Link to="/contact-us">Contact Us</Link>
+      </h3>
+      <Link to="/contact-us" className="actionCall--link">
+        Contact Us
+      </Link>
     </div>
     <Link to="/">Go back to the homepage</Link>
   </Layout>

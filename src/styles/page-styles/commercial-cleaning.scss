@@ -36,6 +36,7 @@
   }
   a {
     @include btn();
+    @extend %textShadow;
     background-color: $color-blue;
     font-size: $font-small;
     color: $color-white;
@@ -74,5 +75,28 @@
         line-height: 1.5;
       }
     }
+  }
+}
+
+.actionCall--div {
+  background-color: $color-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  border-radius: 10px;
+
+  color: $color-white;
+  @extend %textShadow;
+  font-size: $font-big;
+  .actionCall--link {
+    color: $color-black;
+    text-decoration: none;
+    background-color: $color-white;
+    @include btn();
+  }
+  .actionCall--link:hover {
+    background-color: lighten($color-white, 100%);
   }
 }
