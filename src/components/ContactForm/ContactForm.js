@@ -1,7 +1,5 @@
 import React from "react"
 
-import './ContactForm.scss';
-
 const ContactForm = () => (
   <div className="contact--div">
     <form method="POST" action="https://formspree.io/jrb2801@yahoo.com">

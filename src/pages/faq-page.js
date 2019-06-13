@@ -9,7 +9,7 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import Faq from "../components/Faq/Faq.js"
 
-import "../styles/page-styles/faq-page.scss"
+// import "../styles/page-styles/faq-page.scss"
 
 const list = [
   {

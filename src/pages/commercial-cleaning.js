@@ -10,7 +10,7 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 
 // styling
-import "../styles/page-styles/commercial-cleaning.scss"
+// import "../styles/page-styles/commercial-cleaning.scss"
 import cart from "../images/cart.svg"
 
 const CommercialCleaning = () => (
