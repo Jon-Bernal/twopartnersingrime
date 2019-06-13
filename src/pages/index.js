@@ -1,3 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from "react"
 import { Link } from "gatsby"
 
@@ -5,7 +9,9 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import ContactForm from '../components/ContactForm/ContactForm'
 
-import '../styles/page-styles/index.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// import '../styles/page-styles/index.scss';
 
 const IndexPage = () => (
   <Layout>
