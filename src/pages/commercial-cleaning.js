@@ -12,7 +12,7 @@ import SEO from "../components/seo"
 
 // styling
 import "../styles/pages/commercial-cleaning.scss"
-import cart from "../images/cart.svg"
+// import cart from "../images/cart.svg"
 
 const CommercialCleaning = () => (
   <Layout>

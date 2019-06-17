@@ -10,7 +10,7 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import Faq from "../components/Faq/Faq.js"
 
-// import "../styles/page-styles/faq-page.scss"
+import "../styles/pages/faq-page.scss"
 
 const list = [
   {
@@ -52,28 +52,30 @@ const list = [
 ]
 
 const faqPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>FAQ</h1>
-    <div className="faq-list">
-      {list.map(item => {
-        return (
-          <Faq
-            header={item.header}
-            key={item.header}
-            question={item.question}
-            faqClickHandler={faqClickHandler}
-          />
-        )
-      })}
-      <div className="faq--container" onClick={faqClickHandler}>
-        <h4 className="faq--h4">How do I get an office cleaning quote?</h4>
-        <p className="faq--p hidden">
-          Just <Link to="/">contact us</Link> to get started!
-        </p>
+  <div id="faq">
+    <Layout>
+      <SEO title="Page two" />
+      <h1 className="faq-h2">FAQ</h1>
+      <div className="faq-list">
+        {list.map(item => {
+          return (
+            <Faq
+              header={item.header}
+              key={item.header}
+              question={item.question}
+              faqClickHandler={faqClickHandler}
+            />
+          )
+        })}
+        <div className="faq--container" onClick={faqClickHandler}>
+          <h4 className="faq--h4">How do I get an office cleaning quote?</h4>
+          <p className="faq--p hidden">
+            Just <Link to="/">contact us</Link> to get started!
+          </p>
+        </div>
       </div>
-    </div>
-  </Layout>
+    </Layout>
+  </div>
 )
 
 function faqClickHandler(e) {
