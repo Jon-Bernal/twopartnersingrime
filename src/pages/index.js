@@ -1,29 +1,62 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import $ from 'jquery';
+// import Popper from 'popper.js';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../styles/page-styles/index.scss';
+import '../styles/reset.scss';
+
 import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import ContactForm from '../components/ContactForm/ContactForm'
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-// import '../styles/page-styles/index.scss';
+import '../styles/pages/index.scss'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`maid`, `cleaning`, `commercial`, 'residential', 'janitor', 'janitorial']} />
-    <h2>We Clean. You Relax.</h2>
-    <div className="sideBySide spacing">
-      <div className="left">
-        <h3>Why Choose <br />Two Partners In Grime?</h3>
+    <div className="above-the-fold">
+      <SEO title="Home" keywords={[`maid`, `cleaning`, `commercial`, 'residential', 'janitor', 'janitorial']} />
+      <h2>Logo goes here</h2>
+      <div className="calc-div">
+        <h3 className="calc-h3">Quick Estimator</h3>
+        <form className="calculator">
+          <select name="bedrooms" id="br">
+            <option value="none">Bedrooms</option>
+            <option value="1br">1 Bedroom</option>
+            <option value="2br">2 Bedrooms</option>
+            <option value="3br">3 Bedrooms</option>
+            <option value="4br">4 Bedrooms</option>
+            <option value="5br">5 Bedrooms</option>
+            <option value="6br">6 Bedrooms</option>
+          </select>
+          <select name="bathrooms" id="bath">
+            <option value="none">Bathrooms</option>
+            <option value="1bath">1 Bathrooms</option>
+            <option value="2bath">2 Bathrooms</option>
+            <option value="3bath">3 Bathrooms</option>
+            <option value="4bath">4 Bathrooms</option>
+            <option value="5bath">5 Bathrooms</option>
+            <option value="6bath">6 Bathrooms</option>
+          </select>
+          <select name="cleanLevel" id="cleanlvl">
+            <option value="standard">Standard</option>
+            <option value="standard">Deep Clean</option>
+          </select>
+          <button>Submit</button>
+        </form>
       </div>
-      <div className="right">
-        <p>Cleaning’s no fun.  In fact, it’s time-consuming, dirty, and can involve a bruised knee or two. Luckily for you, we love to clean. It’s basically all we do. Get your day and knees back, call us to make your place shine like never before.</p>
-        <p>In the rare event you’re not satisfied with the quality of the service, we will make it right.</p>
+    </div>
+    <div className="sideBySide-container">
+      <div className="sideBySide spacing">
+        <div className="left">
+          <h3>Why Choose <br />Two Partners In Grime?</h3>
+        </div>
+        <div className="right">
+          <p>Cleaning’s no fun.  In fact, it’s time-consuming, dirty, and can involve a bruised knee or two. Luckily for you, we love to clean. It’s basically all we do. Get your day and knees back, call us to make your place shine like never before.</p>
+          <p>In the rare event you’re not satisfied with the quality of the service, we will make it right.</p>
+        </div>
       </div>
     </div>
     <div className="horizontal-list">

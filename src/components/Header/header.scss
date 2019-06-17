@@ -1,0 +1,55 @@
+.mainHeader {
+    // background-color: red;
+    padding: 0px 10%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    @media (max-width: 1300px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    nav {
+        // background-color: blue;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        @media (max-width: 1300px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+        }
+        a {
+            // background-color: green;
+            text-decoration: none;
+            padding: 20px;
+            color: #323232;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: rgba(255,255,255,.95);
+            border-radius: 5px;
+            box-shadow: 0px 1px 2px #323232;
+        }
+    }
+}
+
+.logo-h1 {
+    margin: 0px;
+    a {
+        text-decoration: none;
+        color: #232323;
+    }
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
