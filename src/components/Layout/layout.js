@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "../Header/header"
-// import "./layout.scss"
+import "./layout.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery query={graphql` query SiteTitleQuery { site { siteMetadata { title } } } `} render={data => (
@@ -20,7 +20,7 @@ const Layout = ({ children }) => (
         <main>{children}</main>
       </div>
       <footer>
-        © {new Date().getFullYear()}, Built by&nbsp;
+        © {new Date().getFullYear()} Two Partners In Grime |  Built by
         <a href="https://www.bluesandswebdesign.com"> Blue Sands Web Design</a>
       </footer>
     </>
