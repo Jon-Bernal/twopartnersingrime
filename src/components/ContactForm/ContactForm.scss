@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.contact--div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    form {
+        max-width: 600px;
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        background-color: $color-blue;
+        border-radius: 10px;
+        input, textarea, button {
+            border: none;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 5px;
+            background-color: $color-white;
+            color: $color-black;
+        }
+        input::placeholder, textarea::placeholder {
+            color: $color-black;
+        }
+        button:hover {
+            background-color: white;
+        }
+    }
+}
