@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+footer {
+    width: 100%;
+    color: white;
+    background: $color-black;
+    text-align: center;
+    padding: 20px;
+    font-size: $font-small;
+    a {
+        text-decoration: none;
+        color: $color-blue;
+    }
+    a:hover {
+        color: lighten($color-blue, 10%);
+    }
+}
