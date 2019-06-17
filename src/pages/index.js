@@ -77,12 +77,14 @@ const IndexPage = () => (
         <p className="horizontal--list--description">Schedule recurring cleans to keep your place always looking fresh.</p>
       </div>
     </div>
-
-    <div className="actionCall--div">
-      <h3 className="">Are you a commercial space?</h3>
-      <Link className='actionCall--link' to="/commercial-cleaning">Learn More</Link>
+    <div className="actionCall--container">
+      <div className="actionCall--img"></div>
+      <div className="actionCall--div">
+        <h3 className="actionCall-title">Are you a commercial space?</h3>
+        <Link className='actionCall--link' to="/commercial-cleaning"><i class="fas fa-arrow-left"></i> Learn More</Link>
+      </div>
     </div>
-    <div className="contactSection">
+    <div className="contact--section">
       <h3>Ready for more free time? <br /> Contact us Today!</h3>
       <ContactForm />
     </div>
