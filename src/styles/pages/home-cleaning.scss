@@ -1,0 +1,132 @@
+@import '../variables.scss';
+
+#home-cleaning {
+    .above-the-fold{
+
+        background: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255, .8), rgba(255,255,255, .8)),
+        url('../../images/unsplash2.jpg');
+        background-size: cover, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center;
+        padding-top:100px;
+        // padding-bottom:100px;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .container {
+            padding: 10%;
+            
+            .left {
+                margin-left: auto;
+                width: 50%;
+                h2 {
+                    text-align: center;
+                    font-size: 50px;
+                }
+                p {
+                    line-height: 1.55;
+                    margin-bottom: 15px;
+                    font-size: 18px;
+                }
+                a {
+                    background-color: $color-blue;
+                    padding: 20px 30px;
+                    margin-top: 25px;
+                    text-decoration: none;
+                    color: white;
+                    display: block;
+                    max-width: max-content;
+                    font-weight: bold;
+                    border-radius: 3px;
+                    margin-left: auto;
+                    font-size: $font-medium;
+                }
+            }
+        }
+    }
+
+    .checklist {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 40px;
+        .checklist--h4 {
+            font-size: $font-big;
+            text-align: center;
+        }
+        .row {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: stretch;
+            flex-wrap: wrap;
+            .col {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                background-color: #efefef;
+                padding: 0px 20px 32px 20px;
+                width: 18%;
+                min-width: 250px;
+                border-radius: 5px;
+                margin: 0px 10px;
+                margin-bottom: 40px;
+
+                h4 {
+                    color: $color-black;
+                    text-align: center;
+                    font-size: $font-medium;
+                }
+                ul {
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                    padding-inline-start: 0px;
+                }
+                li {
+                    color: $color-black;
+                    list-style: none;
+                    margin-bottom: 10px;
+                    line-height: 1.25;
+                }
+            }
+        }
+    }
+
+    .actionCall--container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 600px;
+        .actionCall--img {
+            background-image: url('../../images/unsplash4.jpg');
+            background-size: cover;
+            background-position:center;
+            width:68%;
+        }
+        .actionCall--div {
+            background-color: $color-blue;
+            width: 42%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .actionCall-title{
+                color: white;
+                font-size: $font-big;
+                padding: 0px 60px;
+                text-align: center;
+                text-shadow: 0px 0px 1px lighten($color-black, 25%);
+            }
+            .actionCall--link {
+                font-size: $font-medium;
+                text-decoration: none;
+                color: white;
+            }
+            .actionCall--link:hover {
+                color: darken(white, 10%);
+            }
+        }
+    }
+}
