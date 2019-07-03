@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+h1 {
+  font-size: $font-big;
+  color: $color-black;
+  margin: 0px;
+}
+
+.sideBySide {
+  @extend %sideBySide;
+  align-items: flex-start;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    @extend %side;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      // background-color: red;
+    }
+  }
+
+  .squeege-svg {
+    width: 100%;
+  }
+}
+
+.left-content {
+  h3 {
+    font-size: $font-big;
+  }
+  p {
+    font-size: $font-small;
+    text-align: left;
+    color: $color-black;
+  }
+  a {
+    @include btn();
+    @extend %textShadow;
+    background-color: $color-blue;
+    font-size: $font-small;
+    color: $color-white;
+    padding: 10px 20px;
+  }
+}
