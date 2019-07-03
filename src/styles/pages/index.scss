@@ -37,7 +37,9 @@
 .sideBySide-container {
     width: 100%;
     border-bottom: 2px solid #ededed;
+    box-sizing: border-box;
     .sideBySide {
+        box-sizing: border-box;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -46,11 +48,18 @@
         width: 100%;
         margin: 0 auto;
         padding: 100px;
+        @media (max-width: 1000px){
+            flex-direction: column;
+        }
         .left {
             width:35%;
             text-align: center;
             font-size: 1.75rem;
             text-shadow: 1px 1px 1px rgba(255,255,255,.25), -1px -1px 1px rgba(255,255,255,.25);
+            @media (max-width: 1000px){
+                width: 100%;
+                line-height: 1.25;
+            }
         }
         .right {
             width:35%;
@@ -58,6 +67,9 @@
             font-size: 1.25rem;
             line-height: 1.25;
             text-shadow: 1px 1px 1px rgba(255,255,255,.25), -1px -1px 1px rgba(255,255,255,.25);
+            @media (max-width: 1000px){
+                width: 100%;
+            }
         }
     }
 }
