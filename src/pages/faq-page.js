@@ -36,12 +36,13 @@ const list = [
   {
     header: "Why get your office cleaned?",
     question:
-      "We understand that a clean work space can reduce the likelihood of employees getting sick, and thus being more productive.  A clean work space has been shown to reduce the chance of catching a cold by 80%!",
+      "Studies have shown that office cleanliness plays a vital role in preventing illness in the work place.  A clean work place makes for more productive workers.",
+      // "We understand that a clean work space can reduce the likelihood of employees getting sick, and thus being more productive.  A clean work space has been shown to reduce the chance of catching a cold by 80%!",
   },
   {
     header: "Do you clean during or after business hours?",
     question:
-      "We clean during both business hours and after hours. Our cleaning staff is able to clean day and night, depending on your preference.  Many customers give us a key for after-hours cleaning, so we can clean without disrupting your work. Our cleaning staff is both insured and bonded, and Two Partners In Grime will coordinate with your building manager.",
+      "Yes! Many customers give us a key or a code for after hours cleaning.  So we can clean without disrupting your work - Two Partners in Grime will always stay in touch with your office manager.",
   },
   {
     header:
