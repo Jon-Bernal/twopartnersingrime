@@ -22,11 +22,12 @@ const CommercialCleaning = () => (
         <div className="container">
           <div className="left left-content">
             <h2>A clean office is a productive one</h2>
-            <p>
+            <p>Two Partners in Grime understands{/* cares about*/} the importance of your company's office.  We want to maintaine your office appearance and iamge at all times.  Our team will provide you with the highest level of care.</p>
+            {/* <p>
               We offer competitive rates for workspaces big and small. Our office
               cleaning services keep your place looking fresh year round, allowing
               your team to focus on what’s important.
-            </p>
+            </p> */}
             <Link to="/contact-us">Contact Us</Link>
           </div>
         </div>
@@ -40,7 +41,7 @@ const CommercialCleaning = () => (
               <li>No annual contract</li>
               <li>Transparent pricing</li>
               <li>
-                Easy, convenient payment methods (credit/debit or invoicing)
+                We take debit or credit cards and invoice once a month
               </li>
               <li>
                 Consistent, high quality service (employees, no contractors)
