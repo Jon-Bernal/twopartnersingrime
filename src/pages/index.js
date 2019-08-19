@@ -54,8 +54,7 @@ const IndexPage = () => (
           <h3>Why Choose <br />Two Partners In Grime?</h3>
         </div>
         <div className="right">
-          <p>Cleaning’s no fun.  In fact, it’s time-consuming, dirty, and can involve a bruised knee or two. Luckily for you, we love to clean. It’s basically all we do. Get your day and knees back, call us to make your place shine like never before.</p>
-          <p>In the rare event you’re not satisfied with the quality of the service, we will make it right.</p>
+          <p>We are trained to pay attention to details.  We treat your home as if it was our own.  We know you have a busy schedule, so let Two Partners in Grime give you back the freedom to spend time with your family, friends and yourself!</p>
         </div>
       </div>
     </div>
@@ -70,7 +69,7 @@ const IndexPage = () => (
       </div>
       <div className="horizontal--list--item">
         <h4 className="horizontal--list--header">We Clean</h4>
-        <p className="horizontal--list--description">We rigorously cover our checklist. Add-ons available.</p>
+        <p className="horizontal--list--description">We customize to your cleaning needs. Add ons available.</p>
       </div>
       <div className="horizontal--list--item">
         <h4 className="horizontal--list--header">Rinse & Repeat</h4>
