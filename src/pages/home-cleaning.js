@@ -14,9 +14,11 @@ const HomeCleaning = () => (
       <div className="above-the-fold">
         <div className="container">
           <div className="left">
-            <h2>Refresh your home</h2>
-            <p>We understand your home is important to you. That’s why we focus on the quality of the clean. Our cleaners aren’t contract workers – they are full-time employees. They care as much as we do.</p>
-            <p>On top of that, we know every home is different, so we allow you to give us special requests for those hard to reach places.  Also if you have specific cleaners or tools you own that you want us to use instead of our own, we are happy to do so!</p>
+            {/* <h2>Refresh your home</h2> */}
+            {/* <p>We understand your home is important to you. That’s why we focus on the quality of the clean. Our cleaners aren’t contract workers – they are full-time employees. They care as much as we do.</p>
+            <p>On top of that, we know every home is different, so we allow you to give us special requests for those hard to reach places.  Also if you have specific cleaners or tools you own that you want us to use instead of our own, we are happy to do so!</p> */}
+            <h2>House Cleaning</h2>
+            <p>Our cleaning aretist go the extra mile on every job because they care as much as you do about your beautiful home! On top of that, we know every home / client has different needs so we customize your house cleaning to your specific needs.  Also if you have a specific cleaner or tools you own that you want us to use instead of our own, we are happy to do so! </p>
             <Link to="/contact-us">Contact Us</Link>
           </div>
         </div>
