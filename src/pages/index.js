@@ -19,7 +19,7 @@ const IndexPage = () => (
     <div className="above-the-fold">
       <SEO title="Home" keywords={[`maid`, `cleaning`, `commercial`, 'residential', 'janitor', 'janitorial']} />
       <h2 className=".index--h2">Logo goes here</h2>
-      <div className="calc-div">
+      {/* <div className="calc-div">
         <h3 className="calc-h3">Quick Estimator</h3>
         <form className="calculator">
           <select name="bedrooms" id="br">
@@ -46,7 +46,7 @@ const IndexPage = () => (
           </select>
           <button>Submit</button>
         </form>
-      </div>
+      </div> */}
     </div>
     <div className="sideBySide-container">
       <div className="sideBySide spacing">
