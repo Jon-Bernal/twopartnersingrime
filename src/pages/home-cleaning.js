@@ -80,7 +80,6 @@ const HomeCleaning = () => (
           <div className="col">
             <h4>Misc.</h4>
             <ul>
-              <li>Straighten up</li>
               <li>Empty trash and replace liners</li>
               <li>Turn off lights</li>
             </ul>
