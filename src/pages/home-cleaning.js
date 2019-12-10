@@ -1,4 +1,4 @@
-import '../styles/reset.scss';
+import "../styles/reset.scss"
 import React from "react"
 import { Link } from "gatsby"
 
@@ -9,7 +9,6 @@ import "../styles/pages/home-cleaning.scss"
 const HomeCleaning = () => (
   <Layout>
     <div id="home-cleaning">
-
       <SEO title="Home Cleaning" />
       <div className="above-the-fold">
         <div className="container">
@@ -18,7 +17,14 @@ const HomeCleaning = () => (
             {/* <p>We understand your home is important to you. That’s why we focus on the quality of the clean. Our cleaners aren’t contract workers – they are full-time employees. They care as much as we do.</p>
             <p>On top of that, we know every home is different, so we allow you to give us special requests for those hard to reach places.  Also if you have specific cleaners or tools you own that you want us to use instead of our own, we are happy to do so!</p> */}
             <h2>House Cleaning</h2>
-            <p>Our cleaning aretist go the extra mile on every job because they care as much as you do about your beautiful home! On top of that, we know every home / client has different needs so we customize your house cleaning to your specific needs.  Also if you have a specific cleaner or tools you own that you want us to use instead of our own, we are happy to do so! </p>
+            <p>
+              Our cleaning artists go the extra mile on every job because they
+              care as much as you do about your beautiful home! On top of that,
+              we know every home / client has different needs so we customize
+              your house cleaning to your specific needs. Also if you have a
+              specific cleaner or tools you own that you want us to use instead
+              of our own, we are happy to do so!{" "}
+            </p>
             <Link to="/contact-us">Contact Us</Link>
           </div>
         </div>
@@ -58,7 +64,6 @@ const HomeCleaning = () => (
               <li>Bathroom counters</li>
               <li>Bathroom shelves (exterior)</li>
               <li>Shower door</li>
-              <li>Shower door</li>
               <li>Shower caddy / soap dish</li>
               <li>Bathroom mirror</li>
               <li>Trashcans (exterior)</li>
@@ -87,14 +92,17 @@ const HomeCleaning = () => (
         </div>
       </section>
       <div className="actionCall--container">
-        <div className="actionCall--img"></div>
+        <div className="actionCall--img" />
         <div className="actionCall--div">
           <h3 className="actionCall-title">Ready to have more free time?</h3>
-          <Link className='actionCall--link' to="/contact-us"> contact Us <i class="fas fa-long-arrow-alt-right"></i></Link>
+          <Link className="actionCall--link" to="/contact-us">
+            {" "}
+            contact Us <i class="fas fa-long-arrow-alt-right" />
+          </Link>
         </div>
       </div>
     </div>
   </Layout>
 )
 
-export default HomeCleaning;
+export default HomeCleaning

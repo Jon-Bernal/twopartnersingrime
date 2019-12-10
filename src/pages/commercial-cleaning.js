@@ -2,7 +2,7 @@
 // import $ from 'jquery';
 // import Popper from 'popper.js';
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
-import '../styles/reset.scss';
+import "../styles/reset.scss"
 import React from "react"
 import { Link } from "gatsby"
 
@@ -22,7 +22,12 @@ const CommercialCleaning = () => (
         <div className="container">
           <div className="left left-content">
             <h2>A clean office is a productive one</h2>
-            <p>Two Partners in Grime understands{/* cares about*/} the importance of your company's office.  We want to maintaine your office appearance and iamge at all times.  Our team will provide you with the highest level of care.</p>
+            <p>
+              Two Partners in Grime understands{/* cares about*/} the importance
+              of your company's office. We want to maintain your office
+              appearance and image at all times. Our team will provide you with
+              the highest level of care.
+            </p>
             {/* <p>
               We offer competitive rates for workspaces big and small. Our office
               cleaning services keep your place looking fresh year round, allowing
@@ -40,9 +45,7 @@ const CommercialCleaning = () => (
               <li>Insured and bonded</li>
               <li>No annual contract</li>
               <li>Transparent pricing</li>
-              <li>
-                We take debit or credit cards and invoice once a month
-              </li>
+              <li>We take debit or credit cards and invoice once a month</li>
               <li>
                 Consistent, high quality service (employees, no contractors)
               </li>
@@ -67,10 +70,15 @@ const CommercialCleaning = () => (
       </section>
 
       <div className="actionCall--container">
-        <div className="actionCall--img"></div>
+        <div className="actionCall--img" />
         <div className="actionCall--div">
-          <h3 className="actionCall-title">Focus on your business. <br /> Leave the cleaning to us</h3>
-          <Link className='actionCall--link' to="/contact-us"> contact Us <i class="fas fa-long-arrow-alt-right"></i></Link>
+          <h3 className="actionCall-title">
+            Focus on your business. <br /> Leave the cleaning to us
+          </h3>
+          <Link className="actionCall--link" to="/contact-us">
+            {" "}
+            contact Us <i class="fas fa-long-arrow-alt-right" />
+          </Link>
         </div>
       </div>
     </div>

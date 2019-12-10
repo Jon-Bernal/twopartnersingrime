@@ -2,7 +2,7 @@
 // import $ from 'jquery';
 // import Popper from 'popper.js';
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
-import '../styles/reset.scss';
+import "../styles/reset.scss"
 import React from "react"
 import { Link } from "gatsby"
 
@@ -26,18 +26,18 @@ const list = [
   {
     header: "Do I need to provide cleaning supplies?",
     question:
-      "We bring all of our own cleaning supplies.  However if you have a specific product, or tool you would prefer that we use, let us know and we are happy to customize our cleaning process to what is best for you and your family or business.",
+      "We bring all of our own cleaning supplies, however if you have a specific product or tool you would prefer that we use, let us know and we are happy to customize our cleaning process to what is best for you and your family or business.",
   },
   {
     header: "Is there manager oversight?",
     question:
-      "Absolutely. Two Partners In Grime takes pride in on our quality control. Either the Owner or our Quality Control Manager typically joins the cleaners on their first four months of cleaning and follows up periodically, by email and in person, to make sure we consistently do a great job.",
+      "Absolutely. Two Partners In Grime takes pride in our quality control. Either the Owner or our Quality Control Manager typically joins the cleaners on their first four months of cleaning and follows up periodically, by email and in person, to make sure we consistently do a great job.",
   },
   {
     header: "Why get your office cleaned?",
     question:
       "Studies have shown that office cleanliness plays a vital role in preventing illness in the work place.  A clean work place makes for more productive workers.",
-      // "We understand that a clean work space can reduce the likelihood of employees getting sick, and thus being more productive.  A clean work space has been shown to reduce the chance of catching a cold by 80%!",
+    // "We understand that a clean work space can reduce the likelihood of employees getting sick, and thus being more productive.  A clean work space has been shown to reduce the chance of catching a cold by 80%!",
   },
   {
     header: "Do you clean during or after business hours?",
